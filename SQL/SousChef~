@@ -1,0 +1,121 @@
+select count(*) from battles;
+
+RESULTS: 204447
+
+
+select count(*) from battles where num_pvp_fought > num_pve_fought;
+
+RESULTS: 69841
+
+
+select count(*) from battles where num_pve_fought > num_pvp_fought;
+
+RESULTS: 132272
+
+
+
+
+select count(*) from battles where num_pvp_fought > num_pve_fought and is_spender ="1";
+
+RESULTS: 11207
+
+
+
+select count(*) from battles where num_pve_fought > num_pvp_fought and is_spender ="1";
+
+RESULTS: 6844
+
+
+select count(DISTINCT player_id) from battles;
+
+RESULTS: 3657
+
+
+
+
+select MAX(date(event_time)) from battles;
+
+RESULTS: 1983-08-06
+
+
+select MIN(date(first_play_time)) from battles;
+
+RESULTS: 1983-07-20
+
+
+
+
+
+
+select count(*) from battles where julianday(event_time) - julianday(first_play_time) > 1; 
+
+RESULTS: 123026
+
+
+select count(*) from battles where julianday(event_time) - julianday(first_play_time) > 7; 
+
+RESULTS: 25010
+
+
+select count(*) from battles where julianday(event_time) - julianday(first_play_time) > 14; 
+
+RESULTS: 2721
+
+
+
+
+
+select count(*) from battles where (julianday(event_time) - julianday(first_play_time) > 1) and (num_pvp_fought > num_pve_fought); 
+
+RESULTS: 53023
+
+
+select count(*) from battles where (julianday(event_time) - julianday(first_play_time) > 7) and (num_pvp_fought > num_pve_fought); 
+
+RESULTS: 15856
+
+
+select count(*) from battles where (julianday(event_time) - julianday(first_play_time) > 14) and (num_pvp_fought > num_pve_fought); 
+
+RESULTS: 1788
+
+
+
+
+select count(*) from battles where (julianday(event_time) - julianday(first_play_time) > 1) and (num_pve_fought > num_pvp_fought); 
+
+RESULTS: 69306
+
+
+select count(*) from battles where (julianday(event_time) - julianday(first_play_time) > 7) and (num_pve_fought > num_pvp_fought); 
+
+RESULTS: 9094
+
+
+select count(*) from battles where (julianday(event_time) - julianday(first_play_time) > 14) and (num_pve_fought > num_pvp_fought); 
+
+RESULTS: 927
+
+
+
+
+
+
+
+select count(DISTINCT player_id) from battles where num_pvp_fought > num_pve_fought;
+
+RESULTS: 1047
+
+select count(DISTINCT player_id) from battles where num_pve_fought > num_pvp_fought;
+
+RESULTS: 3409
+
+
+select count(DISTINCT player_id) from battles where mission_number = '1';
+
+RESULTS: 1808
+
+
+select count(DISTINCT player_id) from battles where mission_number = '3';
+
+RESULTS: 3350

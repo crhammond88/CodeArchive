@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=xCoord\ yCoord
+comment0.target=SmallCircle(int,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ SmallCircle\r\n\ @param\ xCoord\ the\ x\ coordinate\ of\ this\ Circle\r\n\ @param\ yCoord\ the\ y\ coordinate\ of\ this\ Circle\r\n
+comment1.params=
+comment1.target=void\ fill()
+comment1.text=\r\n\ Fills\ the\ Circle\r\n
+numComments=2

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo</title>
+
+<meta property='og:site_name' content='Monsoon Games' />
+<meta property='og:title' content='Demo' />
+<meta property='og:description' content='Demonstatrion of various web development techniques.' />
+<meta property='og:image' content='http://monsoongames.com/uploads/3/5/2/0/3520310/9359515.jpg' />
+<meta property='og:url' content='http://monsoongames.com/demo.html' />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<style>
+body {
+    background-color: #d8ecf9;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 60%;
+	border: 6px double #3a1d00;
+	background-color: #663300;
+	color: #ffffff;
+	text-align: center;
+}
+
+p {
+	margin-left: auto;
+    margin-right: auto;   
+	text-align: center;
+    max-width: 50%;
+	border: 3px ridge black;
+	background-color: #ffffff;
+}
+
+div {    
+	max-width: 90%;	
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    
+}
+
+.center_div {    
+	border: 4px outset #d8c3a6;
+	background-color: #E4D2BA;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script>
+
+</script>
+
+</head>
+
+<body>
+<?php include_once("analyticstracking.php") ?>
+
+<h1>Demo Page</h1>
+<div class="container">
+  <div class="center_div">
+	
+	<p>Hello world!</p>
+	<table>
+	  <tr>
+		<th>PHP</th>
+		<th>Python</th>
+	  </tr>
+	  <tr>
+		<td>SQL</td>
+		<td>Javascript</td>
+	  </tr>
+	  <tr>
+		<td>JSON</td>
+		<td>XML</td>
+	  </tr>
+	</table>
+  </div>
+</div>
+
+</body>
+</html>

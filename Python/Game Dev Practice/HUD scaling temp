@@ -1,0 +1,26 @@
+	opponentX = (camera.pixelWidth - playerWidth) /(1 + (playerData.uiScale - 5)/10.0) + (playerWidth/(1 + (playerData.uiScale - 5)/10.0) - playerWidth);
+	skillsX = (camera.pixelWidth/2.0 - skillsWidth/2.0) /(1 + (playerData.uiScale - 5)/10.0) + (skillsWidth/(1 + (playerData.uiScale - 5)/16.0) - skillsWidth);		
+	visionX = (camera.pixelWidth - pauseWidth) /(1 + (playerData.uiScale - 5)/10.0) + (pauseWidth/(1 + (playerData.uiScale - 5)/10.0) - pauseWidth);
+	fpsBoxX = (camera.pixelWidth/2.0 - 50) /(1 + (playerData.uiScale - 5)/10.0) + (100/(1 + (playerData.uiScale - 5)/16.0) - 100);
+	skillLevelUpsY = topBarHeight/4.0 * 3;
+	bottomBarY = (camera.pixelHeight - bottomBarHeight)/(1 + (playerData.uiScale - 5)/10.0) + (bottomBarHeight/(1 + (playerData.uiScale - 5)/10.0) - bottomBarHeight);//0.4-1
+	targetBoxY = (camera.pixelHeight/2.0)/(1 + (playerData.uiScale - 5)/10.0) + ((camera.pixelHeight/10.0)/(1 + (playerData.uiScale - 5)/10.0) - (camera.pixelHeight/10.0));
+	
+	
+	var uiScaleValue : float = (1 + (playerData.uiScale - 5)/10.0);
+	var uiScaleMiddleValue : float = (1 + (playerData.uiScale - 5)/16.0); 	
+	var halfCameraWidth : int = camera.pixelWidth/2;
+	var tenthCameraHeight : int = camera.pixelHeight/10;
+	
+	minimapBackground.pixelInset = Rect(halfCameraWidth, 75, 1, 1);	
+	opponentX = (camera.pixelWidth - playerWidth)/uiScaleValue + (playerWidth/uiScaleValue - playerWidth);
+	skillsX = (halfCameraWidth - skillsWidth/2.0)/uiScaleValue + (skillsWidth/uiScaleMiddleValue - skillsWidth);		
+	visionX = (camera.pixelWidth - pauseWidth)/uiScaleValue + (pauseWidth/uiScaleValue - pauseWidth);
+	fpsBoxX = (halfCameraWidth- 50)/uiScaleValue + (100/uiScaleMiddleValue - 100);
+	skillLevelUpsY = topBarHeight/4.0 * 3;
+	bottomBarY = (camera.pixelHeight - bottomBarHeight)/uiScaleValue + (bottomBarHeight/uiScaleValue - bottomBarHeight);//0.4-1
+	targetBoxY = (camera.pixelHeight/2.0)/uiScaleValue + (tenthCameraHeight/uiScaleValue - tenthCameraHeight);
+	if(playerData.displayingFPS) {
+		fpsBoxX = (halfCameraWidth - 50)/uiScaleValue + (100/uiScaleMiddleValue - 100);
+		fpsBoxY = (camera.pixelHeight - 220)/uiScaleValue + (220/uiScaleValue - 220);
+	}

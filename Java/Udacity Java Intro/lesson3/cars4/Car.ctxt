@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=distance
+comment0.target=void\ drive(double)
+comment1.params=amount
+comment1.target=void\ addGas(double)
+comment2.params=
+comment2.target=double\ getMilesDriven()
+comment3.params=
+comment3.target=double\ getGasInTank()
+comment4.params=
+comment4.target=Car()
+numComments=5
