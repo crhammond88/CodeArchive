@@ -1,0 +1,11 @@
+
+
+int main (void)
+{
+    x = 5
+    x += 5
+
+    printf("%d\n", x)
+}
+
+
